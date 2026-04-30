@@ -1,0 +1,35 @@
+/*:root {
+  --fundo: #1d2021;
+  --card: #282828;
+  --destaque-primario: #fabd2f;
+  --destaque-secundario: #83a598;
+  --preco-baixo: #b8bb26;
+  --preco-alto: #fb4934;
+  --texto-principal: #ebdbb2;
+  --texto-secundario: #a89984;
+}
+
+body {
+  background-color: var(--fundo);
+}
+*/
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: Inter, sans-serif;
+}
+.icone_gpu {
+  filter: invert(81%) sepia(30%) saturate(2959%) hue-rotate(337deg)
+    brightness(112%) contrast(96%);
+}
+.icone_home,
+.icone_produtos,
+.icone_sobre {
+  filter: invert(72%) sepia(11%) saturate(518%) hue-rotate(356deg)
+    brightness(83%) contrast(98%);
+}
