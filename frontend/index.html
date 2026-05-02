@@ -9,6 +9,7 @@
       @theme {
         --color-fundo: #1d2021;
         --color-fundo-secundario: #292d2f;
+        --color-fundo-terciario: #15191b;
         --color-card: #282828;
         --color-card-borda: #242424;
         --color-destaque-primario: #fabd2f;
@@ -19,8 +20,11 @@
         --color-texto-secundario: #a89984;
         --color-fundo-icone-verde: #292d1e;
         --color-fundo-icone-verde-escuro: #16311b;
-        --color-fundo-icone-vermelho: #3B1612;
+        --color-fundo-icone-vermelho: #3b1612;
         --color-destaque-texto-verde: #77ba66;
+        --color-destaque-fundo-amarelo: #323200;
+        --color-destaque-texto-amarelo: #ffff00;
+        --color-borda-amarela: #505000;
       }
     </style>
     <style>
@@ -143,15 +147,50 @@
             </p>
             <p class="text-texto-principal text-xl">R$ 9.999,90</p>
             <p class="text-texto-secundario text-[0.7rem] mt-2">
-              <span class="ml-1"
-                >RTX 4090 na Amazon</span
-              >
+              <span class="ml-1">RTX 4090 na Amazon</span>
             </p>
           </div>
         </div>
       </div>
     </section>
-    <section></section>
+    <section class="pl-5 grid grid-cols-2 grid-rows-[60px_auto] gap-x-5">
+      <div class="pl-5 col-start-1 row-start-1 flex items-center gap-x-2">
+        <img class="h-6" src="icons/hdmi-port.svg" alt="Icone HDMI" />
+        <h1 class="text-texto-principal font-bold">Produtos monitorados</h1>
+      </div>
+      <div
+        class="col-start-1 row-start-2 grid grid-cols-[220px_220px_220px] grid-rows-2 gap-2"
+      >
+        <div class="bg-fundo-terciario flex flex-col items-center rounded-2xl">
+          <img
+            class="h-20 mt-4 mb-4"
+            src="icons/rtx_3060.png"
+            alt="foto RTX 3060"
+          />
+          <p class="text-texto-principal font-bold">RTX 3060</p>
+          <p
+            class="text-destaque-texto-verde text-[0.7rem] font-bold pt-1 pb-1"
+          >
+            NVIDIA
+          </p>
+          <p class="text-texto-secundario text-[0.7rem]">Preço médio</p>
+          <p class="text-texto-principal text-xl">R$ 2.105,33</p>
+          <p class="text-texto-secundario text-[0.7rem]">
+            <span class="text-destaque-texto-verde pr-2">-3,27%</span>(7 dias)
+          </p>
+          <div
+            class="bg-destaque-fundo-amarelo w-[80%] rounded-md m-2 border border-borda-amarela cursor-pointer"
+          >
+            <p
+              class="text-destaque-texto-amarelo text-center text-[0.7rem] pt-1 pb-1"
+            >
+              Ver histórico
+            </p>
+          </div>
+        </div>
+      </div>   
+      <div class="h-full bg-blue-900 col-start-2 row-start-1 row-end-3"></div>
+    </section>
     <footer></footer>
   </body>
 </html>

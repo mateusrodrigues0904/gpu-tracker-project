@@ -22,7 +22,6 @@ body {
 
 * {
   font-family: Inter, sans-serif;
-  background-color: ;
 }
 .icone_gpu {
   filter: invert(81%) sepia(30%) saturate(2959%) hue-rotate(337deg)
