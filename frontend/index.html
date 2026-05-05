@@ -11,7 +11,7 @@
         --color-fundo-secundario: #292d2f;
         --color-fundo-terciario: #15191b;
         --color-card: #282828;
-        --color-card-borda: #242424;
+        --color-card-borda: #454040;
         --color-destaque-primario: #fabd2f;
         --color-destaque-secundario: #83a598;
         --color-preco-baixo: #b8bb26;
@@ -21,6 +21,7 @@
         --color-fundo-icone-verde: #292d1e;
         --color-fundo-icone-verde-escuro: #16311b;
         --color-fundo-icone-vermelho: #3b1612;
+        --color-texto-vermelho: #e63320;
         --color-destaque-texto-verde: #77ba66;
         --color-destaque-fundo-amarelo: #323200;
         --color-destaque-texto-amarelo: #ffff00;
@@ -97,7 +98,7 @@
       </div>
       <div class="w-2/4 flex items-center gap-8">
         <div
-          class="h-30 w-60 bg-fundo rounded-lg border-2 border-card-borda flex"
+          class="h-30 w-60 bg-fundo rounded-lg border border-card-borda flex"
         >
           <div
             class="mt-4 ml-4 w-10 h-10 rounded-xl flex items-center justify-center bg-fundo-icone-verde"
@@ -114,7 +115,7 @@
           </div>
         </div>
         <div
-          class="h-30 w-60 bg-fundo rounded-lg border-2 border-card-borda flex"
+          class="h-30 w-60 bg-fundo rounded-lg border border-card-borda flex"
         >
           <div
             class="mt-4 ml-4 w-10 h-10 rounded-xl flex items-center justify-center bg-fundo-icone-verde-escuro"
@@ -134,7 +135,7 @@
           </div>
         </div>
         <div
-          class="h-30 w-60 bg-fundo rounded-lg border-2 border-card-borda flex"
+          class="h-30 w-60 bg-fundo rounded-lg border border-card-borda flex"
         >
           <div
             class="mt-4 ml-4 w-10 h-10 rounded-xl flex items-center justify-center bg-fundo-icone-vermelho"
@@ -154,7 +155,7 @@
       </div>
     </section>
     <section class="pl-5 grid grid-cols-2 grid-rows-[60px_auto] gap-x-5">
-      <div class="pl-5 col-start-1 row-start-1 flex items-center gap-x-2">
+      <div class="pl-1 col-start-1 row-start-1 flex items-center gap-x-2">
         <img class="h-6" src="icons/hdmi-port.svg" alt="Icone HDMI" />
         <h1 class="text-texto-principal font-bold">Produtos monitorados</h1>
       </div>
@@ -188,8 +189,130 @@
             </p>
           </div>
         </div>
-      </div>   
-      <div class="h-full bg-blue-900 col-start-2 row-start-1 row-end-3"></div>
+      </div>
+      <div
+        class="h-full col-start-2 row-start-1 row-end-3 bg-fundo-terciario rounded-xl border-card-borda pl-5 pr-5"
+      >
+        <div class="historico de preços">
+          <div class="flex justify-between mt-4">
+            <div class="flex gap-2 items-center">
+              <img class="h-6" src="icons/graphs.svg" alt="Icone gráfico" />
+              <p class="text-texto-principal font-bold">
+                Histórico de preços - RTX 3060
+              </p>
+            </div>
+            <div
+              class="bg-fundo-secundario rounded-xl border-card-borda flex items-center gap-2 p-2 cursor-pointer"
+            >
+              <p class="text-texto-principal text-[0.7rem]">Últimos 30 dias</p>
+              <img
+                class="h-3"
+                src="icons/chevron-down.svg"
+                alt="Icone chevron down"
+              />
+            </div>
+          </div>
+          <div class="mt-9">
+            <img
+              src="icons/graph-placeholder.png"
+              alt="Placeholder para os gráficos que serão elaborados"
+            />
+          </div>
+          <hr class="bg-card-borda mt-5 border-card-borda" />
+        </div>
+        <div class="preços atuais mt-4">
+          <div class="mb-2">
+            <p class="text-texto-principal font-bold">Preços atuais</p>
+          </div>
+          <table class="w-full border border-card-borda rounded-xl">
+            <thead
+              class="bg-card text-texto-principal border border-card-borda text-[0.7rem]"
+            >
+              <tr>
+                <th class="p-2 text-left">Loja</th>
+                <th class="p-2 text-left">Preço</th>
+                <th class="p-2 text-left">Variação (7 dias)</th>
+                <th class="p-2 text-left">Link</th>
+              </tr>
+            </thead>
+            <tbody class="border border-card-borda">
+              <tr class="border border-card-borda">
+                <td class="border border-card-borda">
+                  <div class="flex gap-2 p-2 text-texto-principal">
+                    <img src="icons/apple.svg" alt="icone placeholder" />
+                    <span>Amazon</span>
+                  </div>
+                </td>
+                <td
+                  class="border border-card-borda text-texto-principal text-[0.9rem] p-2"
+                >
+                  R$ 2.299,90
+                </td>
+                <td class="border border-card-borda text-texto-vermelho p-2">
+                  ▲ +2,39%
+                </td>
+                <td class="text-texto-principal">
+                  <div class="flex items-center justify-center">
+                    <a href="#" title="Ir para a loja" >
+                      <img src="icons/link.svg" alt="Icone link" class="h-5" />
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-card-borda">
+                  <div class="flex gap-2 p-2 text-texto-principal">
+                    <img src="icons/apple.svg" alt="icone placeholder" />
+                    <span>Kabum</span>
+                  </div>
+                </td>
+                <td
+                  class="border border-card-borda text-texto-principal text-[0.9rem] p-2"
+                >
+                  R$ 1.899,00
+                </td>
+                <td
+                  class="border border-card-borda text-destaque-texto-verde p-2"
+                >
+                  ▼ -4,52%
+                </td>
+                <td class="border border-card-borda">
+                  <div class="flex items-center justify-center">
+                    <a href="#" title="Ir para a loja">
+                      <img class="h-5" src="icons/link.svg" alt="Icone link" />
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-card-borda">
+                  <div class="flex gap-2 p-2 text-texto-principal">
+                    <img src="icons/apple.svg" alt="icone placeholder" />
+                    <span>Pichau</span>
+                  </div>
+                </td>
+                <td
+                  class="border border-card-borda text-texto-principal text-[0.9rem] p-2"
+                >
+                  R$ 2.119,90
+                </td>
+                <td
+                  class="border border-card-borda text-destaque-texto-verde p-2"
+                >
+                  ▼ -1,17%
+                </td>
+                <td class="border border-card-borda">
+                  <div class="flex items-center justify-center">
+                    <a href="#" title="Ir para a loja">
+                      <img class="h-5" src="icons/link.svg" alt="Icone link" />
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
     <footer></footer>
   </body>
